@@ -1,23 +1,29 @@
----
-layout: default
----
+<!DOCTYPE>
+<html>
 
-<div class="home">
+<head>
+<title>My Website</title>
+<link rel="stylesheet" type="text/css" href="css/homecss.css"
 
-  <h1 class="page-heading">Posts</h1>
+</head>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<body>
+<div id="container"> 
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<h1>Jackson Prints</h1>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div id="navigation">
 
+<ul id="nav menu">
+
+<li> <a href="home.html"> Home </a> </li>
+<li> <a href="newest.html"> New </a> </li>
+<li> <a href="contact.html"> Contact </a> </li>
+
+</ul>
 </div>
+
+</div> 
+</body>
+
+</html>
